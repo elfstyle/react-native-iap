@@ -835,7 +835,7 @@ const App = () => {
   const handlePurchase = async () => {
     // ... handle the purchase request
 
-    const result = finishTransaction({purchase});
+    const result = await finishTransaction({purchase});
   };
 
   return <Button title="Buy product" onPress={handlePurchase} />;
